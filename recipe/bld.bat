@@ -4,8 +4,7 @@ set TMPDIR=%cd%\localtmpdir
 set TEMP=%cd%\localtmpdir
 set TMP=%cd%\localtmpdir
 
-set "CC=clang-cl.exe"
-set "CXX=clang-cl.exe"
+set "BAZEL_CXXOPTS=/std=c++17"
 
 %PYTHON% -m pip install . -vv --no-deps
 if errorlevel 1 exit 1
