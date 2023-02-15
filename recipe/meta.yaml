@@ -27,6 +27,8 @@ requirements:
     - {{ compiler('cxx') }}
     - bazel 5
     - bazel-toolchain  # [not win]
+    - clang  # [win]
+    - lld  # [win]
 
   host:
     - pybind11
