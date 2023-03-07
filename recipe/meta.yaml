@@ -13,6 +13,7 @@ source:
   sha256: dbd3e0b96e1b50936846bdc6f8f63d1199ca6319aefa64c0f5c9a5d29858f605
   patches:
     - unvendor_deps.patch
+    - bazel_force_cxx17.patch
 
 build:
   number: 3
