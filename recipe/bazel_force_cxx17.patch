@@ -6,7 +6,7 @@ index 62053ea..92a8989 100644
      bazel_argv = [
          'bazel',
          'build',
-+        '--cxxopt="-std=c++17"',
++        '--cxxopt=-std=c++17',
          ext.bazel_target,
          '--symlink_prefix=' + os.path.join(self.build_temp, 'bazel-'),
          '--compilation_mode=' + ('dbg' if self.debug else 'opt'),
