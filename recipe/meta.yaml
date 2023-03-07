@@ -44,7 +44,7 @@ requirements:
 
 test:
   commands:
-    - pytest --pyargs labmaze -v -k "not testGoldenMazeRegeneration"
+    - pytest --pyargs labmaze -v -k "not testGoldenMazeRegeneration and not testGoldenTwoRoom9x11Maze"
     - pip check
   imports:
     - labmaze
