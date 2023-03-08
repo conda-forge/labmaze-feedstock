@@ -1,11 +1,11 @@
-About labmaze
-=============
+About labmaze-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/labmaze-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/deepmind/labmaze
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/labmaze-feedstock/blob/main/LICENSE.txt)
 
 Summary: A standalone release of DeepMind Lab's maze generator with Python bindings.
 
