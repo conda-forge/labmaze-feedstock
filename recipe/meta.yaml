@@ -16,7 +16,7 @@ source:
     - bazel_force_cxx17.patch  # [win]
 
 build:
-  number: 3
+  number: 4
   # Only an header-only part of abseil is used
   ignore_run_exports:
     - libabseil
