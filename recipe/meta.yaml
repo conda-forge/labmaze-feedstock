@@ -14,6 +14,7 @@ source:
   patches:
     - unvendor_deps.patch
     - bazel_force_cxx17.patch  # [win]
+    - fix_python_312.patch
 
 build:
   number: 5
