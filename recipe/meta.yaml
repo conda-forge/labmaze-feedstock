@@ -17,7 +17,7 @@ source:
     - fix_python_312.patch
 
 build:
-  number: 7
+  number: 8
   # Only an header-only part of abseil is used
   ignore_run_exports:
     - libabseil
@@ -29,6 +29,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - bazel 5
     - bazel-toolchain  # [not win]
