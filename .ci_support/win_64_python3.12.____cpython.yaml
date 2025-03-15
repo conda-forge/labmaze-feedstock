@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libabseil:
-- '20240722'
+- '20250127'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -20,6 +20,3 @@ python:
 - 3.12.* *_cpython
 target_platform:
 - win-64
-zip_keys:
-- - python
-  - channel_sources
