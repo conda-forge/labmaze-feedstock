@@ -17,7 +17,7 @@ source:
     - fix_python_312.patch
 
 build:
-  number: 12
+  number: 13
   # Only an header-only part of abseil is used
   ignore_run_exports:
     - libabseil
