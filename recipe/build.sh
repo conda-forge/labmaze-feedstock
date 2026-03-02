@@ -5,6 +5,9 @@ set -euxo pipefail
 export CFLAGS="${CFLAGS} -DNDEBUG"
 export CXXFLAGS="${CXXFLAGS} -DNDEBUG"
 
+# Workaround for https://github.com/conda-forge/bazel-feedstock/issues/273
+rm -rf $BUILD_PREFIX/share/bazel/install/
+
 source gen-bazel-toolchain
 
 cat >> .bazelrc <<EOF
