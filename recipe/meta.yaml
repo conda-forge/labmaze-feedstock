@@ -31,7 +31,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
-    - bazel
+    - bazel 5
     - bazel-toolchain  # [not win]
 
   host:
