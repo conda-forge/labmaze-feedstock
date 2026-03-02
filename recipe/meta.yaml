@@ -32,6 +32,8 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - bazel 5
+    # Workaround for https://github.com/conda-forge/labmaze-feedstock/pull/19#issuecomment-3985841941
+    - libprotobuf 4.25.3
     - bazel-toolchain  # [not win]
 
   host:
