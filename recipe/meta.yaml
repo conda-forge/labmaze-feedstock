@@ -17,7 +17,7 @@ source:
     - fix_python_312.patch
 
 build:
-  number: 13
+  number: 14
   # Only an header-only part of abseil is used
   ignore_run_exports:
     - libabseil
@@ -32,6 +32,8 @@ requirements:
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - bazel 5
+    # Workaround for https://github.com/conda-forge/labmaze-feedstock/pull/19#issuecomment-3985841941
+    - libprotobuf 4.25.3
     - bazel-toolchain  # [not win]
 
   host:
